@@ -18,6 +18,7 @@ Metadata:
       Parameters:
         - InstancePassword
         - AccessCidr
+        - EC2KeyName
     - Label:
         default: Scaling
       Parameters:
@@ -31,6 +32,8 @@ Metadata:
         - Subnet
 
     ParameterLabels:
+      KeyPair:
+        default: Available keypair fo accessing the
       InstancePassword:
         default: Instance Password
       AccessCidr:
